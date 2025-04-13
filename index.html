@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DigiMarketing Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chatbot-container">
+    <header>
+      <img src="aprovados.png" alt="Logo" class="logo">
+    </header>
+
+    <video autoplay muted loop class="video">
+      <source src="matrix.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+
+    <div class="chat-window" id="chat-window"></div>
+
+    <div class="button-area">
+      <button onclick="sendResponse('alavancagem')">Alavancagem de marca</button>
+      <button onclick="sendResponse('funil')">Funis de vendas</button>
+      <button onclick="sendResponse('estrategia')">Estratégias de vendas</button>
+      <button onclick="sendResponse('criativos')">Criativos que convertem</button>
+      <button onclick="sendResponse('sites')">Sites</button>
+      <button onclick="sendResponse('programacao')">Programação</button>
+      <button onclick="clearChat()">Limpar Conversa</button>
+      <button onclick="sendResponse('especialista')">Quero falar com um especialista</button>
+    </div>
+
+    <form onsubmit="handleSend(event)">
+      <input type="text" id="user-input" placeholder="Digite sua mensagem..." autocomplete="off" />
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
